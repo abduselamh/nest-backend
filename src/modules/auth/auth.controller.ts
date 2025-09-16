@@ -9,7 +9,7 @@ import { ZodValidationPipe } from '@/common/pipes/zod-validation.pipe';
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Post('login')
+  /*@Post('login')
   login(
     @Body(new ZodValidationPipe<LoginDto>(LoginSchema))
     body: LoginDto,
@@ -40,5 +40,5 @@ export class AuthController {
   ) {
     return this.authService.findByUserId('some-user'); // placeholder
   }
-
+*/
 }
