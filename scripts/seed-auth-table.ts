@@ -23,6 +23,8 @@ const lowLevelClient = new DynamoDBClient({
   },
 });
 
+console.log("DYNAMO CONNXN", lowLevelClient)
+
 const client = DynamoDBDocumentClient.from(lowLevelClient, {
   marshallOptions: {
     removeUndefinedValues: true,
